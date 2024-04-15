@@ -22,8 +22,6 @@
 
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
     <script type="text/javascript" src="../js/site.js" DEFER></script>
-	<!-- Use me for a JavaScript OOP Project -->
-	<script type="text/javascript" src="./js/project.js" DEFER></script>
 	<!-- Use me for a p5.js project -->
 	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
 </head>
@@ -32,30 +30,37 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 2 - Living Impressions</h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
 					<!-- canvas will be added here -->
 				</div>
                 <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
+                    <button id="reimagine">Reimagine</button>
+					<button id="fullscreen">Fullscreen</button>
                 </div>
 			</div>
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>The objective is to create a live impression of some landscaped image using procedural generation. This is to mimic the general scope of the image with relativve colors, primitives, and polygons:</p>
+				<img src="https://cdn.glitch.global/f6d86d42-6b12-4ed3-81ee-c1bdba02e1ab/shutterstock-5303681501.webp?v=1713125962553" alt="Landscape Image" />
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>Relation to inspring image:</p>
+				<p>- Color: The sky, sand, trees, bushes, grass and rock colors were sampled from the inspiring image using the Photoshop eyedropper tool.</p>
+				<p>- Primitives: The trees are rendered with vertex adjustments and the bushes are rendered with ellipses. </p>
+				<p>- Polygons: The background mountain is a single randomly generated polygon using `vertex` calls as well as the grass.</p>
+				<p>- Polygons: The background mountain is a single randomly generated polygon using `vertex` calls as well as the grass.</p>
+				<p>- Life: The position of trees is animated over time as if to simulate the view from a passing train and the slightly responds to the horizontal motion of the mouse cursor.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>Overall, the assignment was pretty doable. There was some difficulty with finding the right metrics to reciprocate similar images in terms of the mountain range or the trees as you would have to reguarly adjust vertices or steps in order to recreate a similar given shape.</p>
 			</div>
 
 		</section>
