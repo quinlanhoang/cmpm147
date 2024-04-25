@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment 3 - Alternate World</title>
+	<title>Experiment 3 - Alternate Worlds</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -19,42 +19,48 @@
         crossorigin="anonymous"></script>
 	<!-- Load p5.js library -->
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
-
-	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
-    <script type="text/javascript" src="../js/site.js" DEFER></script>
-	<!-- Use me for a JavaScript OOP Project -->
-	<!-- Use me for a p5.js project -->
-	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+	<script type="text/javascript" src="js/p2_base.js"></script>
+	<script type="text/javascript" src="js/p2_base2.js"></script>
+	<script type="text/javascript" src="js/p2_solution.js"></script>
+	<script type="text/javascript" src="js/p2_solution2.js"></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
 	<main id="content">
 		<section>
 
-			<h1>Experiment 3 - Alternate World</h1>
+			<h1>Experiment 3 - Alternate Worlds</h1>
 
 			<div class="minor-section">
-				<div id="canvas-container">
-					<!-- canvas will be added here -->
+				<div>
+					<button id="reseedButton">
+						reseed
+					</button>
+					<span id="seedReport"></span>
+					<hr />
+					<span id="canvasContainer" style="margin: 10px;"></span>
+					<textarea cols="20" rows="20" id="asciiBox" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
 				</div>
-                <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
-                </div>
+
+				<p>Translated from <a href="https://alternate-dungeon-quinlan-hoang.glitch.me/">alternate-dungeon-quinlan-hoang</a>
+				</p>
 			</div>
+
+		
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>This experiment is an auto tile generator in which you are presented with a dungeon and overworld that can be reseeded upon pressing the 'reseed' button. It accounts for rooms, passageways, bodies of water, chests and houses that are randomly generated and placed.</p>
+				<p>I am trying to integrate an auto tile generator that takes aspects of a tilemap and represents a dungeon and overworld respectively.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>The map is generated with the use of symbols such as "_, ., !, ?" that acts as placeholders and will loop over one another based on the depth of placement. It will then be given a pre-selected tile that may be randomly selected from an assortment of variations and will then be reiterated over from the tile set. Shapes and figures are not constricted and supplementary functions are utilized to create passageways, lakes, and bridges</p>
+				<p>Rooms are randomly generated of varying sizes and will form pathways connecting them. Chests spawn within the rooms as well as the passageways which are formed by taking two midpoints of separated rooms.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>This experiment was rather challenging in terms of coding as reiterating auto tiling as well as translating from Glitch was rather difficult. This is something that I've personally never tried to do and was truly a learning experierence in terms of success as well as the rigors that I commonly faced.</p>
+				<p>It was hard to transfer my glitch project onto my portfolio until I received aid from another student.</p>
 			</div>
 
 		</section>
