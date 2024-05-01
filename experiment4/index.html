@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 4 - Infinite Worlds</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -21,9 +21,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
 
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
-    <script type="text/javascript" src="../js/site.js" DEFER></script>
+    <!-- <script type="text/javascript" src="../js/site.js" DEFER></script> -->
 	<!-- Use me for a JavaScript OOP Project -->
 	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<script src="./js/xxhash.min.js" defer></script>
 	<!-- Use me for a p5.js project -->
 	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
 </head>
@@ -32,30 +33,34 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 4 - Infinite Worlds</h1>
 
 			<div class="minor-section">
-				<div id="canvas-container">
-					<!-- canvas will be added here -->
+					<div id="canvas-container1" class="p5Canvas">
+						<!-- canvas will be added here -->
+					</div>
+					<div id="canvas-container2" class="p5Canvas">
+						<!-- canvas will be added here -->
+					</div>
+					<div id="canvas-container3" class="p5Canvas">
+						<!-- canvas will be added here -->
+					</div>
 				</div>
-                <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
-                </div>
 			</div>
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>In this experiment, I was trying to make infinite, generative worlds.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>All three sketches share the same global seed. They show the same seed and save across generation but differ in terms of displayment. They all have various depth to it in which the first world represents a 2D visualization of Minecraft plains with vibrant colors and a sin/cos wave in the water. World two represents the 3D visualization without Minecraft and is absent of color to make that monochromatic demo feel of what basic generation contrast is. World three is esentially the sketch and broken down etch of what our inspiration is based off of and still has leveled depth to create hills and declines for pools of water. Traversing and clicking on tiles will identify their coordinates and what kind of block they represent or could've been.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>Overall, I am content with the provided content. I think it really portrays the three levels of depth for ideation of such a kind of game and I believe that I can add more features later on such as block placement or animals roaming around. The hardest part was reiterating this into my portfolio as I ran into many different function errors and had to manually place sketch behind each variable that casued issues. Troubleshooting was rather exhaustive and I think I made a decent project for how much work & stress that went into it.</p>
 			</div>
 
 		</section>
